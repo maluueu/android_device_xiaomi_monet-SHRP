@@ -1,6 +1,7 @@
 DEVICE_PATH := device/xiaomi/monet
 
 # For building with minimal manifest
+TARGET_SUPPORTS_64_BIT_APPS := true
 ALLOW_MISSING_DEPENDENCIES := true
 
 # Assert
@@ -82,7 +83,7 @@ BOARD_USES_METADATA_PARTITION := true
 BOARD_SUPER_PARTITION_SIZE := 9122611200
 BOARD_SUPER_PARTITION_GROUPS := qti_dynamic_partitions
 BOARD_QTI_DYNAMIC_PARTITIONS_SIZE := 9122611200
-BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := product vendor system system_ext odm
+BOARD_QTI_DYNAMIC_PARTITIONS_PARTITION_LIST := product vendor system odm
 
 # File systems
 TARGET_USERIMAGES_USE_EXT4 := true
